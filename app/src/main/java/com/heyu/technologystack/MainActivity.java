@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         HttpControlManager.getInstance(this).sendHttpRequest(buildParams);
     }
 
+
     private static String prepareParam(Map<String, String> paramMap) {
         StringBuffer sb = new StringBuffer();
         if (paramMap == null) {
