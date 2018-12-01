@@ -2,7 +2,7 @@ package com.heyu.technologystack.network;
 
 import android.text.TextUtils;
 
-import com.heyu.technologystack.utils.Logger;
+import com.heyu.technologystack.logger.Logger;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;

@@ -1,4 +1,4 @@
-package com.heyu.technologystack.utils;
+package com.heyu.technologystack.logger;
 
 import android.os.Environment;
 import android.util.Log;
@@ -25,14 +25,18 @@ public class Logger {
     static String methodName;
     static int lineNumber;
 
-    private static boolean misdebug = false;
+    private static boolean misdebug = true;
 
     private Logger() {
         /* Protect from instantiations */
     }
 
     public static boolean isDebuggable() {
-        return true;
+        return misdebug;
+    }
+
+    public static void updateDebuggableFlag( boolean debug){
+        misdebug = debug;
     }
 
     private static String createLog(String log) {

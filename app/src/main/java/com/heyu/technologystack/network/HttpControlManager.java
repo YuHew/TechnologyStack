@@ -3,7 +3,7 @@ package com.heyu.technologystack.network;
 import android.content.Context;
 import android.os.Process;
 
-import com.heyu.technologystack.utils.Logger;
+import com.heyu.technologystack.logger.Logger;
 import com.heyu.technologystack.utils.NetworkUtils;
 
 import java.io.IOException;
